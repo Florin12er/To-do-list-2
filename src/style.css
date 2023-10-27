@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+ }
+
+
+.container {
+  width: 100%;
+  min-height:100vh;
+  background: linear-gradient(135deg, #153677 , #4e085f);
+  padding: 10px;
+}
+
+.to-do {
+    display: grid;
+    width: 100%;
+    max-width:540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+.to-do h2 {
+  margin-bottom: 20px;
+}
+
+.add-goal {
+  background-color: #edeef0;
+  display: flex;
+  aling-items: center;
+  justify-content: space-between;
+  border-radius: 30px; 
+  padding-left: 20px;
+  margin-bottom:25px;
+}
+#goal {
+  width: 300px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#add {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+li {
+     background-color: #edeef0;
+  display: flex;
+  aling-items: center;
+  border-radius: 30px; 
+  padding-left: 20px;
+  margin-bottom:25px;
+
+}
+
+.name {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.removeButton {
+  outline: none;
+  border: solid gray 2px;
+  width: 25px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.removeButton:hover {
+  background-color: red;
+}
+
+.title {
+  margin-left: 200px;
+}
+
+
+
