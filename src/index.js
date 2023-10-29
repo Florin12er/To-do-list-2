@@ -69,15 +69,19 @@ text.addEventListener("keydown", (event) => {
 })
  function saveData() {
   localStorage.setItem("data", list.innerHTML )
-};
+}
 
 
 function showTask() {
   list.innerHTML = localStorage.getItem("data");
 
-  
+  const check = document.createElement("input")
+  check.type = "checkbox";
+  check.classList.add("check"); 
   const removeButtons = document.querySelectorAll(".removeButton");
-  const checkInputs = document.querySelectorAll(".check");
+  const goalName = document.createElement("div");
+  goalName.classList.add("name");
+  goalName.innerHTML = text.value;
 
   removeButtons.forEach((removeButton) => {
     removeButton.addEventListener("click", () => {
